@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8">
+		<title>Shoe Bazar Yumi</title>
+		<link rel="icon" href="2290456.png" type="image/x-icon">
+		<link rel="stylesheet" type="text/css" href="css/reset.css">
+		<link rel="stylesheet" type="text/css" href="css/index.css">
+
+	</head>
+	<body>
+	
+		<header>
+			<div class="container">
+				<h2 class="titulo">Shoe Bazar Yumi</h2>
+			</div>
+		</header>
+		<main>
+			<section class="container">
+				<h2>Catálogo de Calçados</h2>
+				<label for="filtrar-tabela">Filtre:</label>
+				<input type="text" name="filtro" id="filtrar-tabela" placeholder="Procure o calçado de sua preferência"> 
+				<table>
+					<thead>
+						<tr>
+							<th>Tipo</th>
+							<th>Numeração</th>
+							<th>Cor</th>
+							<th>Marca</th>
+						</tr>
+					</thead>
+					<tbody id="tabela-calçados">
+						<tr class="cliente" id="primeiro-cliente">
+							<td class="info-tipo">Salto</td>
+							<td class="info-numeração">37</td>
+							<td class="info-cor">Bege</td>
+							<td class="info-marca">Arezzo</td>
+						</tr>
+		
+						<tr class="tabela-calçados" >
+								<td class="info-tipo">Tênis</td>
+								<td class="info-numeração">46</td>
+								<td class="info-cor">Vermelho</td>
+								<td class="info-marca">Nike</td>
+							</tr>
+
+					
+							<tr class="tabela-calçados" >
+								<td class="info-tipo">Coturno</td>
+								<td class="info-numeraçãõ">39</td>
+								<td class="info-cor">Preto</td>
+								<td class="info-marca">STEFANINI</td>
+							</tr>
+
+						<tr class="tabela-calçados" >
+							<td class="info-tipo">Rasteirinha</td>
+							<td class="info-numeração">34</td>
+							<td class="info-cor">Rosa Pink</td>
+							<td class="info-marca">Arezzo</td>
+						</tr>
+
+						<tr class="tabela-calçacos" >
+							<td class="info-tipo">Chinelo</td>
+							<td class="info-numeração">36</td>
+							<td class="info-cor">Amarela e Verde</td>
+							<td class="info-marca">Havaianas</td>
+						</tr>
+
+						</tr>
+
+					</tbody>
+				</table>
+				<span id="erro-ajax" class="invisivel">Erro ao buscar o calçado</span>
+
+				<button id="buscar-clientes" class="botao bto-principal">Buscar calçado</button>
+
+			</section>
+		</main>
+
+		<section class="container">
+		    <h2 id="titulo-form">Sugerir novo calçado</h2>
+			<ul id="mensagens-erro"></ul>
+		    <form id="form-adiciona">
+		        <div class="">
+		            <label for="tipo">Tipo:</label>
+		            <input id="tipo" name="tipo" type="text" placeholder="digite o tipo de calçado" class="campo">
+		        </div>
+		        <div class="grupo">
+		            <label for="numeração">Numeração:</label>
+		            <input id="numeração" name="numeração" type="text" placeholder="digite o número do calçado" class="campo campo-medio">
+		        </div>
+		        <div class="grupo">
+		            <label for="cor">Cor:</label>
+		            <input id="cor" name="altura" type="text" placeholder="digite a cor do calçado" class="campo campo-medio">
+		        </div>
+		
+
+		        <button id="sugerir-calçado" class="botao bto-principal">Sugerir</button>
+		    </form>
+		</section>
+
+		<script src="js/calcula-marca.js" ></script>
+		<script src="js/form.js" ></script>
+		<script src="js/remover-calçado.js" ></script>
+		<script src="js/filtra.js" ></script>
+		<script src="js/buscar-calçado.js" ></script>
+
+	</body>
+</html>
